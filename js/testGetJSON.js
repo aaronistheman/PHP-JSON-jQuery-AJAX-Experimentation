@@ -1,3 +1,8 @@
 $(document).ready(function() {
-    alert("hullo\n");
+    $.getJSON(
+        "php/testGetJSON.php",
+        function(json) {
+            alert(json.text);
+        }
+    );
 });
