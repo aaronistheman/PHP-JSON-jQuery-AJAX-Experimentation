@@ -6,6 +6,10 @@ $(document).ready(function() {
         },
         function(json) {
             alert(json.text);
+            
+            var tag = document.getElementById("tweetScore");
+            tag.href =
+                'http://twitter.com/home?status='+escape("Sup, " + json.text + "");
         }
     );
 });
