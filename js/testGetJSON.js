@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.getJSON(
-        "php/testGetJSON.php",
+        "testGetJSON.php",
         {
             name: "Robert",
         },
